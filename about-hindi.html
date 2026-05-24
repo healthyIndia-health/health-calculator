@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>हमारे बारे में - Health Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1117;--card:#1a1d27;--accent1:#00e5ff;--accent2:#ff4081;--accent3:#69f0ae;--accent4:#ffab40;--accent5:#ce93d8;--text:#e8eaf6;--muted:#90a4ae;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);min-height:100vh;background-image:radial-gradient(ellipse at 20% 20%,rgba(0,229,255,0.07) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(255,64,129,0.07) 0%,transparent 60%)}
+header{text-align:center;padding:40px 20px 20px}
+header h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,4vw,2.2rem);background:linear-gradient(90deg,var(--accent1),var(--accent5),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+header p{color:var(--muted);margin-top:8px;font-size:0.9rem}
+nav{text-align:center;margin:16px 0}
+nav a{color:var(--accent1);text-decoration:none;font-weight:700;font-size:0.9rem;margin:0 10px}
+nav a:hover{color:var(--accent2)}
+.container{max-width:800px;margin:0 auto;padding:20px 16px 60px}
+.card{background:var(--card);border-radius:var(--radius);padding:28px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.card h2{font-size:1.05rem;color:var(--accent1);margin-bottom:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.card p{font-size:0.92rem;color:var(--muted);line-height:1.8;margin-bottom:10px}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:16px}
+.feature-box{background:rgba(255,255,255,0.04);border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.06);text-align:center}
+.feature-box .icon{font-size:2rem;margin-bottom:8px}
+.feature-box h3{font-size:0.85rem;font-weight:800;color:var(--text);margin-bottom:6px}
+.feature-box p{font-size:0.8rem;color:var(--muted);line-height:1.6}
+.disclaimer{background:rgba(255,171,64,0.08);border:1px solid rgba(255,171,64,0.2);border-radius:12px;padding:16px;margin-top:16px}
+.disclaimer p{color:#ffab40;font-size:0.85rem;line-height:1.7}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.06)}
+footer a{color:var(--accent1);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ HEALTH CALCULATOR</h1>
+<p>Body Composition & Wellness Analyzer</p>
+</header>
+<nav>
+<a href="index.html">🏠 होम</a>
+<a href="diet-tips-hindi.html">डाइट टिप्स</a>
+<a href="exercise-hindi.html">व्यायाम गाइड</a>
+<a href="bmi-guide-hindi.html">BMI गाइड</a>
+<a href="privacy-policy-hindi.html">गोपनीयता नीति</a>
+</nav>
+<div class="container">
+
+<div class="card">
+<h2>🏥 हमारे बारे में</h2>
+<p>Health Calculator एक मुफ्त ऑनलाइन स्वास्थ्य उपकरण है जो आपको अपनी शरीर की संरचना को समझने में मदद करता है। हमारा लक्ष्य है कि हर भारतीय अपने स्वास्थ्य के बारे में सटीक जानकारी प्राप्त कर सके — बिना किसी खर्च के।</p>
+<p>हम वैज्ञानिक फॉर्मूलों का उपयोग करके आपको 21 से अधिक स्वास्थ्य मेट्रिक्स प्रदान करते हैं जैसे BMI, BMR, शरीर में वसा प्रतिशत, मांसपेशी द्रव्यमान और बहुत कुछ।</p>
+</div>
+
+<div class="card">
+<h2>⚡ हमारी विशेषताएं</h2>
+<div class="feature-grid">
+<div class="feature-box"><div class="icon">🆓</div><h3>बिल्कुल मुफ्त</h3><p>कोई शुल्क नहीं, कोई रजिस्ट्रेशन नहीं</p></div>
+<div class="feature-box"><div class="icon">🔒</div><h3>100% सुरक्षित</h3><p>आपका डेटा आपके डिवाइस पर रहता है</p></div>
+<div class="feature-box"><div class="icon">📊</div><h3>21+ मेट्रिक्स</h3><p>विस्तृत स्वास्थ्य विश्लेषण</p></div>
+<div class="feature-box"><div class="icon">🍽️</div><h3>कैलोरी प्लान</h3><p>वजन घटाने और बढ़ाने के लिए</p></div>
+<div class="feature-box"><div class="icon">📱</div><h3>मोबाइल फ्रेंडली</h3><p>किसी भी डिवाइस पर काम करता है</p></div>
+<div class="feature-box"><div class="icon">🌐</div><h3>हिंदी + English</h3><p>दोनों भाषाओं में उपलब्ध</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>🎯 हमारा उद्देश्य</h2>
+<p>भारत में लाखों लोग अपने स्वास्थ्य के बारे में जागरूक नहीं हैं। महंगे जिम या डॉक्टर के पास जाने से पहले, आप घर बैठे अपनी बेसिक स्वास्थ्य स्थिति जान सकते हैं।</p>
+<p>हम चाहते हैं कि हर व्यक्ति — चाहे वो गांव में हो या शहर में — अपने स्वास्थ्य को समझे और बेहतर जीवन जिए।</p>
+<div class="disclaimer">
+<p>⚠️ <strong>महत्वपूर्ण:</strong> यह कैलकुलेटर केवल सामान्य जानकारी के लिए है। किसी भी गंभीर स्वास्थ्य समस्या के लिए कृपया अपने डॉक्टर से सलाह लें।</p>
+</div>
+</div>
+
+<div class="card">
+<h2>📩 संपर्क करें</h2>
+<p>कोई सुझाव या शिकायत है? हम आपकी बात सुनना चाहते हैं। हमारी वेबसाइट को और बेहतर बनाने में हमारी मदद करें।</p>
+</div>
+</div>
+<footer>
+<p>© 2026 Health Calculator | <a href="privacy-policy-hindi.html">गोपनीयता नीति</a> | <a href="about-english.html">About Us (English)</a></p>
+</footer>
+</body>
+</html>

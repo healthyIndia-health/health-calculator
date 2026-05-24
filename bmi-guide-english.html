@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Guide - What is BMI & How to Improve It | Health Calculator</title>
+<meta name="description" content="Complete BMI guide. Learn what BMI means, healthy BMI ranges, limitations of BMI, and how to reach your ideal BMI through diet and exercise.">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1117;--card:#1a1d27;--accent1:#00e5ff;--accent2:#ff4081;--accent3:#69f0ae;--accent4:#ffab40;--accent5:#ce93d8;--text:#e8eaf6;--muted:#90a4ae;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);min-height:100vh;background-image:radial-gradient(ellipse at 20% 20%,rgba(0,229,255,0.07) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(255,64,129,0.07) 0%,transparent 60%)}
+header{text-align:center;padding:40px 20px 20px}
+header h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,4vw,2.2rem);background:linear-gradient(90deg,var(--accent1),var(--accent5),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+header p{color:var(--muted);margin-top:8px;font-size:0.9rem}
+nav{text-align:center;margin:16px 0;flex-wrap:wrap;display:flex;justify-content:center;gap:8px;padding:0 16px}
+nav a{color:var(--accent1);text-decoration:none;font-weight:700;font-size:0.85rem;padding:6px 14px;border-radius:20px;border:1px solid rgba(0,229,255,0.2);transition:all .2s}
+.container{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+.page-title{text-align:center;margin-bottom:28px}
+.page-title h2{font-family:'Orbitron',sans-serif;font-size:1.3rem;color:var(--accent1);margin-bottom:8px}
+.card{background:var(--card);border-radius:var(--radius);padding:24px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.06)}
+.card h2{font-size:1rem;margin-bottom:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.card p{font-size:0.9rem;color:var(--muted);line-height:1.8;margin-bottom:10px}
+.range-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:16px}
+.range-card{border-radius:12px;padding:14px;text-align:center}
+.range-card h3{font-size:0.85rem;font-weight:800;margin-bottom:4px}
+.formula-box{background:rgba(0,229,255,0.06);border:1px solid rgba(0,229,255,0.2);border-radius:12px;padding:20px;text-align:center;margin:16px 0}
+.formula-box .formula{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:var(--accent1);margin:10px 0}
+.calc-link{display:inline-block;margin-top:16px;padding:12px 28px;background:linear-gradient(135deg,var(--accent1),var(--accent5));color:#0f1117;font-weight:800;border-radius:10px;text-decoration:none;font-family:'Orbitron',sans-serif;font-size:0.85rem;letter-spacing:1px}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.06)}
+footer a{color:var(--accent1);text-decoration:none}
+</style>
+</head>
+<body>
+<header><h1>⚡ HEALTH CALCULATOR</h1><p>Body Composition & Wellness Analyzer</p></header>
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="diet-tips-english.html">Diet Tips</a>
+<a href="exercise-english.html">Exercise Guide</a>
+<a href="about-english.html">About</a>
+<a href="privacy-policy-english.html">Privacy Policy</a>
+</nav>
+<div class="container">
+<div class="page-title"><h2>📊 BMI Guide</h2><p>Everything you need to know about Body Mass Index and how to improve it</p></div>
+
+<div class="card">
+<h2 style="color:var(--accent1)">📐 What is BMI?</h2>
+<p>BMI (Body Mass Index) is a simple calculation using your height and weight to assess whether you're at a healthy weight. It's one of the most widely used health screening tools worldwide.</p>
+<div class="formula-box">
+<p style="color:var(--muted);font-size:0.85rem">BMI Formula</p>
+<div class="formula">BMI = Weight (kg) ÷ Height² (m)</div>
+<p style="color:var(--muted);font-size:0.8rem">Example: 70kg weight, 170cm height → 70 ÷ (1.70)² = 24.2 (Normal)</p>
+</div>
+<div style="text-align:center"><a href="index.html" class="calc-link">⚡ Calculate Your BMI Now</a></div>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent4)">📊 BMI Categories (WHO Standards)</h2>
+<div class="range-cards">
+<div class="range-card" style="background:rgba(100,181,246,0.1);border:1px solid rgba(100,181,246,0.3)">
+<h3 style="color:#64b5f6">Underweight</h3>
+<p style="color:#64b5f6;font-size:1.1rem;font-weight:800">&lt; 18.5</p>
+<p style="color:var(--muted);font-size:0.8rem">Gain weight needed</p>
+</div>
+<div class="range-card" style="background:rgba(105,240,174,0.1);border:1px solid rgba(105,240,174,0.3)">
+<h3 style="color:#69f0ae">Normal Weight</h3>
+<p style="color:#69f0ae;font-size:1.1rem;font-weight:800">18.5 – 24.9</p>
+<p style="color:var(--muted);font-size:0.8rem">Ideal range ✅</p>
+</div>
+<div class="range-card" style="background:rgba(255,51,51,0.1);border:1px solid rgba(255,51,51,0.3)">
+<h3 style="color:#ff3333">Overweight</h3>
+<p style="color:#ff3333;font-size:1.1rem;font-weight:800">25 – 29.9</p>
+<p style="color:var(--muted);font-size:0.8rem">Weight loss advised</p>
+</div>
+<div class="range-card" style="background:rgba(255,0,0,0.1);border:1px solid rgba(255,0,0,0.3)">
+<h3 style="color:#ff0000">Obese</h3>
+<p style="color:#ff0000;font-size:1.1rem;font-weight:800">30+</p>
+<p style="color:var(--muted);font-size:0.8rem">Medical attention</p>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent2)">⚠️ BMI Limitations</h2>
+<p>BMI is a useful screening tool but has important limitations:</p>
+<p>• It does not distinguish between muscle and fat — a bodybuilder may have a high BMI but be very healthy.</p>
+<p>• It does not account for age, gender, or ethnicity differences.</p>
+<p>• Visceral fat (around organs) is more dangerous than BMI suggests.</p>
+<p>That's why <a href="index.html" style="color:var(--accent1)">our calculator</a> gives you 21+ metrics beyond just BMI for a complete picture.</p>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent3)">✅ How to Improve Your BMI</h2>
+<p><strong style="color:var(--accent1)">1. Calorie Deficit:</strong> Reduce 500 Cal/day → lose ~0.5kg per week safely</p>
+<p><strong style="color:var(--accent1)">2. Exercise:</strong> 30–45 min of walking or jogging daily burns 200–400 calories</p>
+<p><strong style="color:var(--accent1)">3. Hydration:</strong> 8–10 glasses of water reduces hunger naturally</p>
+<p><strong style="color:var(--accent1)">4. Sleep:</strong> 7–8 hours of quality sleep regulates hunger hormones</p>
+<p><strong style="color:var(--accent1)">5. Stress Management:</strong> High cortisol from stress promotes fat storage</p>
+</div>
+</div>
+<footer>
+<p>© 2026 Health Calculator | <a href="index.html">Calculator</a> | <a href="bmi-guide-hindi.html">BMI गाइड (Hindi)</a> | <a href="privacy-policy-english.html">Privacy Policy</a></p>
+</footer>
+</body>
+</html>

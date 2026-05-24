@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>डाइट टिप्स - वजन घटाने और बढ़ाने के उपाय | Health Calculator</title>
+<meta name="description" content="वजन घटाने और बढ़ाने के लिए सर्वश्रेष्ठ डाइट टिप्स। भारतीय खाने के साथ स्वस्थ रहने के तरीके।">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1117;--card:#1a1d27;--accent1:#00e5ff;--accent2:#ff4081;--accent3:#69f0ae;--accent4:#ffab40;--accent5:#ce93d8;--text:#e8eaf6;--muted:#90a4ae;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);min-height:100vh;background-image:radial-gradient(ellipse at 20% 20%,rgba(0,229,255,0.07) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(255,64,129,0.07) 0%,transparent 60%)}
+header{text-align:center;padding:40px 20px 20px}
+header h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,4vw,2.2rem);background:linear-gradient(90deg,var(--accent1),var(--accent5),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+header p{color:var(--muted);margin-top:8px;font-size:0.9rem}
+nav{text-align:center;margin:16px 0;flex-wrap:wrap;display:flex;justify-content:center;gap:8px;padding:0 16px}
+nav a{color:var(--accent1);text-decoration:none;font-weight:700;font-size:0.85rem;padding:6px 14px;border-radius:20px;border:1px solid rgba(0,229,255,0.2);transition:all .2s}
+nav a:hover{background:rgba(0,229,255,0.1)}
+.container{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+.page-title{text-align:center;margin-bottom:28px}
+.page-title h2{font-family:'Orbitron',sans-serif;font-size:1.3rem;color:var(--accent3);margin-bottom:8px}
+.page-title p{color:var(--muted);font-size:0.9rem}
+.card{background:var(--card);border-radius:var(--radius);padding:24px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.card h2{font-size:1rem;margin-bottom:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.card p{font-size:0.9rem;color:var(--muted);line-height:1.8;margin-bottom:10px}
+.tip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:10px}
+.tip-box{background:rgba(255,255,255,0.04);border-radius:12px;padding:16px;border-left:3px solid var(--accent3)}
+.tip-box h3{font-size:0.9rem;font-weight:800;color:var(--text);margin-bottom:6px}
+.tip-box p{font-size:0.82rem;color:var(--muted);line-height:1.6}
+.food-table{width:100%;border-collapse:collapse;margin-top:12px}
+.food-table th{background:rgba(0,229,255,0.1);color:var(--accent1);padding:10px 12px;text-align:left;font-size:0.82rem;font-weight:800;text-transform:uppercase}
+.food-table td{padding:10px 12px;font-size:0.85rem;color:var(--muted);border-bottom:1px solid rgba(255,255,255,0.05)}
+.food-table tr:hover td{background:rgba(255,255,255,0.03)}
+.good{color:var(--accent3)!important;font-weight:700}
+.bad{color:#ff3333!important;font-weight:700}
+.tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:0.72rem;font-weight:800;margin-right:6px;margin-bottom:4px}
+.tag-green{background:rgba(105,240,174,0.15);color:var(--accent3)}
+.tag-red{background:rgba(255,51,51,0.15);color:#ff5252}
+.tag-yellow{background:rgba(255,171,64,0.15);color:#ffab40}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.06)}
+footer a{color:var(--accent1);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ HEALTH CALCULATOR</h1>
+<p>Body Composition & Wellness Analyzer</p>
+</header>
+<nav>
+<a href="index.html">🏠 होम</a>
+<a href="about-hindi.html">हमारे बारे में</a>
+<a href="exercise-hindi.html">व्यायाम गाइड</a>
+<a href="bmi-guide-hindi.html">BMI गाइड</a>
+<a href="privacy-policy-hindi.html">गोपनीयता नीति</a>
+</nav>
+<div class="container">
+<div class="page-title">
+<h2>🥗 डाइट टिप्स</h2>
+<p>वजन घटाने और बढ़ाने के लिए सर्वश्रेष्ठ भारतीय डाइट गाइड</p>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent2)">🔥 वजन घटाने के लिए डाइट</h2>
+<p>वजन घटाने के लिए आपको अपनी TDEE से कम कैलोरी खानी होगी। पहले <a href="index.html" style="color:var(--accent1)">हमारे कैलकुलेटर</a> से अपनी कैलोरी जानें।</p>
+<div class="tip-grid">
+<div class="tip-box"><h3>💧 पानी पीएं</h3><p>दिन में 8-10 गिलास पानी पीएं। खाने से 30 मिनट पहले एक गिलास पीने से भूख कम होती है।</p></div>
+<div class="tip-box"><h3>🕐 खाने का समय</h3><p>सुबह 8 बजे नाश्ता, दोपहर 1 बजे खाना, रात 7 बजे तक खाना खाएं। रात को देर से खाना बंद करें।</p></div>
+<div class="tip-box"><h3>🥗 सब्जियां बढ़ाएं</h3><p>हर भोजन में कम से कम आधी थाली सब्जियों से भरें। इससे कैलोरी कम और पोषण ज्यादा मिलेगा।</p></div>
+<div class="tip-box"><h3>🍚 चावल-रोटी कम करें</h3><p>सफेद चावल और मैदे की जगह ब्राउन राइस और गेहूं की रोटी खाएं। मात्रा भी कम करें।</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent3)">💪 वजन बढ़ाने के लिए डाइट</h2>
+<p>स्वस्थ तरीके से वजन बढ़ाने के लिए प्रोटीन और कैलोरी युक्त खाना जरूरी है।</p>
+<div class="tip-grid">
+<div class="tip-box" style="border-left-color:var(--accent3)"><h3>🥚 अंडे खाएं</h3><p>रोज 3-4 अंडे खाएं। इनमें प्रोटीन और हेल्दी फैट होता है जो मांसपेशियां बनाता है।</p></div>
+<div class="tip-box" style="border-left-color:var(--accent3)"><h3>🥜 ड्राई फ्रूट्स</h3><p>बादाम, काजू, अखरोट रोज खाएं। ये कैलोरी से भरपूर और पौष्टिक होते हैं।</p></div>
+<div class="tip-box" style="border-left-color:var(--accent3)"><h3>🥛 दूध और दही</h3><p>रोज 2-3 गिलास दूध पीएं। दही में प्रोटीन और कैल्शियम होता है।</p></div>
+<div class="tip-box" style="border-left-color:var(--accent3)"><h3>🍌 केला खाएं</h3><p>रोज 2-3 केले खाएं। इनमें कार्बोहाइड्रेट और कैलोरी होती है जो वजन बढ़ाने में मदद करती है।</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent1)">🍽️ भारतीय खाना — क्या खाएं, क्या नहीं</h2>
+<table class="food-table">
+<tr><th>खाना</th><th>कैलोरी (100g)</th><th>स्थिति</th></tr>
+<tr><td>दाल (पकी हुई)</td><td>116 Cal</td><td class="good">✅ बढ़िया</td></tr>
+<tr><td>ब्राउन राइस</td><td>216 Cal</td><td class="good">✅ बढ़िया</td></tr>
+<tr><td>पनीर</td><td>265 Cal</td><td><span class="tag tag-yellow">मध्यम</span></td></tr>
+<tr><td>चिकन (ग्रिल्ड)</td><td>165 Cal</td><td class="good">✅ बढ़िया</td></tr>
+<tr><td>सफेद चावल</td><td>130 Cal</td><td><span class="tag tag-yellow">सीमित मात्रा</span></td></tr>
+<tr><td>समोसा</td><td>262 Cal</td><td class="bad">❌ कम खाएं</td></tr>
+<tr><td>जलेबी</td><td>358 Cal</td><td class="bad">❌ बहुत कम</td></tr>
+<tr><td>कोल्ड ड्रिंक</td><td>42 Cal</td><td class="bad">❌ बंद करें</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent4)">⏰ दिनभर की डाइट प्लान</h2>
+<p><strong style="color:var(--accent1)">सुबह 7 बजे:</strong> गुनगुना पानी + नींबू</p>
+<p><strong style="color:var(--accent1)">सुबह 8 बजे (नाश्ता):</strong> 2 अंडे + 2 रोटी + 1 गिलास दूध</p>
+<p><strong style="color:var(--accent1)">दोपहर 11 बजे (स्नैक):</strong> मुट्ठीभर बादाम + फल</p>
+<p><strong style="color:var(--accent1)">दोपहर 1 बजे (खाना):</strong> 1 कटोरी दाल + 2 रोटी + सब्जी + सलाद</p>
+<p><strong style="color:var(--accent1)">शाम 4 बजे:</strong> चाय (चीनी कम) + मखाना या भुना चना</p>
+<p><strong style="color:var(--accent1)">रात 7 बजे (खाना):</strong> सब्जी + 1-2 रोटी + दही</p>
+<p><strong style="color:var(--accent1)">सोने से पहले:</strong> 1 गिलास गर्म दूध (हल्दी के साथ)</p>
+</div>
+</div>
+<footer>
+<p>© 2026 Health Calculator | <a href="index.html">Calculator</a> | <a href="diet-tips-english.html">Diet Tips (English)</a> | <a href="privacy-policy-hindi.html">गोपनीयता नीति</a></p>
+</footer>
+</body>
+</html>

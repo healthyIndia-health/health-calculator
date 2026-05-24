@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI गाइड - बीएमआई क्या है और कैसे कम करें | Health Calculator</title>
+<meta name="description" content="BMI क्या होता है, सामान्य BMI कितना होना चाहिए, और BMI कम करने के घरेलू उपाय। पूरी जानकारी हिंदी में।">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1117;--card:#1a1d27;--accent1:#00e5ff;--accent2:#ff4081;--accent3:#69f0ae;--accent4:#ffab40;--accent5:#ce93d8;--text:#e8eaf6;--muted:#90a4ae;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);min-height:100vh;background-image:radial-gradient(ellipse at 20% 20%,rgba(0,229,255,0.07) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(255,64,129,0.07) 0%,transparent 60%)}
+header{text-align:center;padding:40px 20px 20px}
+header h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,4vw,2.2rem);background:linear-gradient(90deg,var(--accent1),var(--accent5),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+header p{color:var(--muted);margin-top:8px;font-size:0.9rem}
+nav{text-align:center;margin:16px 0;flex-wrap:wrap;display:flex;justify-content:center;gap:8px;padding:0 16px}
+nav a{color:var(--accent1);text-decoration:none;font-weight:700;font-size:0.85rem;padding:6px 14px;border-radius:20px;border:1px solid rgba(0,229,255,0.2);transition:all .2s}
+.container{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+.page-title{text-align:center;margin-bottom:28px}
+.page-title h2{font-family:'Orbitron',sans-serif;font-size:1.3rem;color:var(--accent1);margin-bottom:8px}
+.card{background:var(--card);border-radius:var(--radius);padding:24px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.06)}
+.card h2{font-size:1rem;margin-bottom:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.card p{font-size:0.9rem;color:var(--muted);line-height:1.8;margin-bottom:10px}
+.bmi-bar{margin:20px 0}
+.bmi-range{display:flex;border-radius:30px;overflow:hidden;height:16px;margin-bottom:8px}
+.bmi-range div{flex:1;position:relative}
+.bmi-labels{display:flex;justify-content:space-between;font-size:0.72rem;color:var(--muted);margin-top:4px}
+.range-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:16px}
+.range-card{border-radius:12px;padding:14px;text-align:center}
+.range-card h3{font-size:0.85rem;font-weight:800;margin-bottom:4px}
+.range-card p{font-size:0.78rem;margin-bottom:0}
+.formula-box{background:rgba(0,229,255,0.06);border:1px solid rgba(0,229,255,0.2);border-radius:12px;padding:20px;text-align:center;margin:16px 0}
+.formula-box .formula{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:var(--accent1);margin:10px 0}
+.calc-link{display:inline-block;margin-top:16px;padding:12px 28px;background:linear-gradient(135deg,var(--accent1),var(--accent5));color:#0f1117;font-weight:800;border-radius:10px;text-decoration:none;font-family:'Orbitron',sans-serif;font-size:0.85rem;letter-spacing:1px}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.06)}
+footer a{color:var(--accent1);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ HEALTH CALCULATOR</h1>
+<p>Body Composition & Wellness Analyzer</p>
+</header>
+<nav>
+<a href="index.html">🏠 होम</a>
+<a href="diet-tips-hindi.html">डाइट टिप्स</a>
+<a href="exercise-hindi.html">व्यायाम गाइड</a>
+<a href="about-hindi.html">हमारे बारे में</a>
+<a href="privacy-policy-hindi.html">गोपनीयता नीति</a>
+</nav>
+<div class="container">
+<div class="page-title">
+<h2>📊 BMI गाइड</h2>
+<p>बीएमआई क्या है, कैसे मापें, और स्वस्थ BMI कैसे बनाए रखें</p>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent1)">📐 BMI क्या होता है?</h2>
+<p>BMI (Body Mass Index) यानी शरीर द्रव्यमान सूचकांक — यह आपके वजन और ऊंचाई के आधार पर बताता है कि आप स्वस्थ हैं या नहीं।</p>
+<div class="formula-box">
+<p style="color:var(--muted);font-size:0.85rem">BMI फॉर्मूला</p>
+<div class="formula">BMI = वजन (kg) ÷ ऊंचाई² (m)</div>
+<p style="color:var(--muted);font-size:0.8rem">उदाहरण: 70kg वजन, 170cm ऊंचाई → 70 ÷ (1.70)² = 24.2</p>
+</div>
+<div style="text-align:center">
+<a href="index.html" class="calc-link">⚡ अपना BMI अभी जानें</a>
+</div>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent4)">📊 BMI श्रेणियां</h2>
+<div class="range-cards">
+<div class="range-card" style="background:rgba(100,181,246,0.1);border:1px solid rgba(100,181,246,0.3)">
+<h3 style="color:#64b5f6">कम वजन</h3>
+<p style="color:#64b5f6;font-size:1.1rem;font-weight:800">18.5 से कम</p>
+<p style="color:var(--muted)">वजन बढ़ाना जरूरी</p>
+</div>
+<div class="range-card" style="background:rgba(105,240,174,0.1);border:1px solid rgba(105,240,174,0.3)">
+<h3 style="color:#69f0ae">सामान्य</h3>
+<p style="color:#69f0ae;font-size:1.1rem;font-weight:800">18.5 – 24.9</p>
+<p style="color:var(--muted)">बिल्कुल सही ✅</p>
+</div>
+<div class="range-card" style="background:rgba(255,51,51,0.1);border:1px solid rgba(255,51,51,0.3)">
+<h3 style="color:#ff3333">अधिक वजन</h3>
+<p style="color:#ff3333;font-size:1.1rem;font-weight:800">25 – 29.9</p>
+<p style="color:var(--muted)">वजन घटाएं</p>
+</div>
+<div class="range-card" style="background:rgba(255,0,0,0.1);border:1px solid rgba(255,0,0,0.3)">
+<h3 style="color:#ff0000">मोटापा</h3>
+<p style="color:#ff0000;font-size:1.1rem;font-weight:800">30 से अधिक</p>
+<p style="color:var(--muted)">तुरंत ध्यान दें</p>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent2)">⚠️ BMI की सीमाएं</h2>
+<p>BMI एक अनुमान है, परफेक्ट माप नहीं। इसकी कुछ सीमाएं हैं:</p>
+<p>• यह मांसपेशी और चर्बी में अंतर नहीं करता — एक बॉडीबिल्डर का BMI ज्यादा हो सकता है पर वो स्वस्थ हो।</p>
+<p>• उम्र और लिंग के अनुसार अलग-अलग हो सकता है।</p>
+<p>• पेट की चर्बी (Visceral Fat) BMI से ज्यादा खतरनाक होती है।</p>
+<p>इसीलिए <a href="index.html" style="color:var(--accent1)">हमारा कैलकुलेटर</a> BMI के साथ-साथ 21 अन्य मेट्रिक्स भी देता है।</p>
+</div>
+
+<div class="card">
+<h2 style="color:var(--accent3)">✅ BMI कम करने के उपाय</h2>
+<p><strong style="color:var(--accent1)">1. कैलोरी घटाएं:</strong> रोज 500 कैलोरी कम खाएं → हफ्ते में 0.5kg वजन कम</p>
+<p><strong style="color:var(--accent1)">2. व्यायाम करें:</strong> रोज 30-45 मिनट चलना या दौड़ना शुरू करें</p>
+<p><strong style="color:var(--accent1)">3. पानी पीएं:</strong> 8-10 गिलास पानी रोज भूख कम करता है</p>
+<p><strong style="color:var(--accent1)">4. नींद लें:</strong> 7-8 घंटे की नींद वजन घटाने में मदद करती है</p>
+<p><strong style="color:var(--accent1)">5. तनाव कम करें:</strong> तनाव से कॉर्टिसोल बढ़ता है जो वजन बढ़ाता है</p>
+</div>
+</div>
+<footer>
+<p>© 2026 Health Calculator | <a href="index.html">Calculator</a> | <a href="bmi-guide-english.html">BMI Guide (English)</a> | <a href="privacy-policy-hindi.html">गोपनीयता नीति</a></p>
+</footer>
+</body>
+</html>

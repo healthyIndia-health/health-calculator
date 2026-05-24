@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Health Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1117;--card:#1a1d27;--accent1:#00e5ff;--accent2:#ff4081;--accent3:#69f0ae;--accent4:#ffab40;--accent5:#ce93d8;--text:#e8eaf6;--muted:#90a4ae;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);min-height:100vh;background-image:radial-gradient(ellipse at 20% 20%,rgba(0,229,255,0.07) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(255,64,129,0.07) 0%,transparent 60%)}
+header{text-align:center;padding:40px 20px 20px}
+header h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,4vw,2.2rem);background:linear-gradient(90deg,var(--accent1),var(--accent5),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+header p{color:var(--muted);margin-top:8px;font-size:0.9rem}
+nav{text-align:center;margin:16px 0}
+nav a{color:var(--accent1);text-decoration:none;font-weight:700;font-size:0.9rem;margin:0 10px}
+nav a:hover{color:var(--accent2)}
+.container{max-width:800px;margin:0 auto;padding:20px 16px 60px}
+.card{background:var(--card);border-radius:var(--radius);padding:28px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.06)}
+.card h2{font-size:1.05rem;color:var(--accent1);margin-bottom:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.card p{font-size:0.92rem;color:var(--muted);line-height:1.8;margin-bottom:10px}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:16px}
+.feature-box{background:rgba(255,255,255,0.04);border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.06);text-align:center}
+.feature-box .icon{font-size:2rem;margin-bottom:8px}
+.feature-box h3{font-size:0.85rem;font-weight:800;color:var(--text);margin-bottom:6px}
+.feature-box p{font-size:0.8rem;color:var(--muted);line-height:1.6}
+.disclaimer{background:rgba(255,171,64,0.08);border:1px solid rgba(255,171,64,0.2);border-radius:12px;padding:16px;margin-top:16px}
+.disclaimer p{color:#ffab40;font-size:0.85rem;line-height:1.7}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.06)}
+footer a{color:var(--accent1);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ HEALTH CALCULATOR</h1>
+<p>Body Composition & Wellness Analyzer</p>
+</header>
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="diet-tips-english.html">Diet Tips</a>
+<a href="exercise-english.html">Exercise Guide</a>
+<a href="bmi-guide-english.html">BMI Guide</a>
+<a href="privacy-policy-english.html">Privacy Policy</a>
+</nav>
+<div class="container">
+
+<div class="card">
+<h2>🏥 About Us</h2>
+<p>Health Calculator is a free online health tool that helps you understand your body composition. Our mission is to make accurate health information accessible to everyone — completely free of charge.</p>
+<p>We use scientifically validated formulas to provide you with 21+ health metrics including BMI, BMR, body fat percentage, muscle mass, visceral fat, and much more — all in seconds.</p>
+</div>
+
+<div class="card">
+<h2>⚡ Our Features</h2>
+<div class="feature-grid">
+<div class="feature-box"><div class="icon">🆓</div><h3>100% Free</h3><p>No fees, no registration required</p></div>
+<div class="feature-box"><div class="icon">🔒</div><h3>Privacy First</h3><p>Your data stays on your device</p></div>
+<div class="feature-box"><div class="icon">📊</div><h3>21+ Metrics</h3><p>Comprehensive health analysis</p></div>
+<div class="feature-box"><div class="icon">🍽️</div><h3>Calorie Plans</h3><p>For weight loss and muscle gain</p></div>
+<div class="feature-box"><div class="icon">📱</div><h3>Mobile Friendly</h3><p>Works on any device</p></div>
+<div class="feature-box"><div class="icon">🌐</div><h3>Hindi + English</h3><p>Available in both languages</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>🎯 Our Mission</h2>
+<p>Millions of people in India and around the world don't have access to affordable health assessments. Before spending money on expensive gym memberships or doctor visits, you can understand your basic health status right from home.</p>
+<p>We believe every person — regardless of location or income — deserves access to quality health information to live a better life.</p>
+<div class="disclaimer">
+<p>⚠️ <strong>Important Disclaimer:</strong> This calculator is for general informational purposes only. It is not a substitute for professional medical advice. Please consult your doctor for any serious health concerns.</p>
+</div>
+</div>
+
+<div class="card">
+<h2>🔬 Science Behind Our Calculator</h2>
+<p>We use internationally recognized formulas including:</p>
+<p>• <strong>Mifflin-St Jeor Equation</strong> for BMR calculation</p>
+<p>• <strong>US Navy Formula</strong> for body fat estimation</p>
+<p>• <strong>Deurenberg Formula</strong> as an alternative body fat method</p>
+<p>• <strong>WHO Standards</strong> for BMI classification</p>
+</div>
+
+<div class="card">
+<h2>📩 Contact Us</h2>
+<p>Have suggestions or feedback? We'd love to hear from you. Help us make Health Calculator even better for everyone.</p>
+</div>
+</div>
+<footer>
+<p>© 2026 Health Calculator | <a href="privacy-policy-english.html">Privacy Policy</a> | <a href="about-hindi.html">हमारे बारे में (Hindi)</a></p>
+</footer>
+</body>
+</html>
